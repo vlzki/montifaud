@@ -1,15 +1,15 @@
-.sidebar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
-  background: #f2f2f2;
+  background: #292424;
   height: 100%;
-  width: 100px;
+  width: 200px;
   padding-top: 18px;
 
   .menu {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0;
     list-style-type: none;
     text-align: center;
@@ -44,65 +44,14 @@
       transition: all .3s;
       transform: rotateY(45deg);
       opacity: 0;
-      font-size: 16px;
-      color: #C2C2C2;
     }
   }
 }
 
 
-.avatar {
-  width: 64px;
-  height: 64px;
-  background: #afbcbd;
-  border-radius: 50%;
+.logo {
   margin: 0 auto 18px;
   position: relative;
-
-  &:hover {
-    img {
-      box-sizing: border-box;
-      border: 2px solid #72D271;
-    }
-
-    &:before {
-      display: none;
-    }
-  }
-
-  img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    transition: border .4s;
-  }
-
-  &:before {
-    content: "";
-
-    $width: 52px;
-
-    width: $width;
-    height: 34px;
-    top: -2px;
-    left: 50%;
-
-    margin-left: -$width/2;
-
-    border-radius: 50% 50% 0 0;
-
-    position: absolute;
-
-    z-index: -1;
-
-    background: linear-gradient(to left, rgba(46,204,113,1) 0%,rgba(125,185,232,0) 100%);
-
-    transform-origin: 50% 100%;
-    transform: rotate(0deg);
-
-    animation: avatar-anim 4.5s infinite 1.5s;
-  }
-
 }
 
 @keyframes avatar-anim {
