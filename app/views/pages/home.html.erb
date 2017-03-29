@@ -4,29 +4,28 @@
   <!-- Sidebar -->
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <%= link_to 'les Offres', '#' %>
+      <li class="sidebar-brand text-center">
+        <h2>Les Offres</h2>
       </li>
       <li>
-        <a href="#">Dashboard</a>
+        <span>Location Salle</span>
+        <p>Entreprise ou particulier, nous mettons à votre disposition des salles pour vos réunions, séminaires d'entreprise, réception de mariage, organisation d'anniversaire. Vous échangerez avec Jeanne-Marie Morisset sur la diposition et des équipements possibles. </p>
       </li>
       <li>
-        <a href="#">Shortcuts</a>
+        <span>Gîte</span>
+        <p>Que vous soyez une famille ou un groupe, vous pourrez profiter d'un hébergement d'une capacité d'accueil de 5 à 8 personnes, le temps de votre séjour, stage ou séminaire.</p>
       </li>
       <li>
-        <a href="#">Overview</a>
+        <span>Chambres d'hôtes</span>
+        <p>En vacances ou pendant le weekend, vou pourrez bénéficier d'une chambre au style champêtre et sobre. En chambre simple et double, vous pourrez discuter du nombre de lit dont vous avez besoin et de la literie selon votre budget.</p>
       </li>
       <li>
-        <a href="#">Events</a>
+        <span>Table d'hôtes</span>
+        <p>Sur réservation avec votre hébergement, Jeanne-Marie vous accueillera à sa table paysanne le temps de votre pause repas.Vous dégusterez des produits locaux frais du jardin et de la région. </p>
       </li>
       <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Services</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
+        <span>Résidence d'artistes</span>
+        <p>Venez vous immerger au calme de la campagne pour réaliser vos travaux artistiques. Vous serez hébergés et accuillis à la table d'hôtes tout le long de votre séjour en résidence.</p>
       </li>
     </ul>
   </div>
@@ -37,6 +36,11 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
+          <div class="tabs">
+            <div class="tab active">OFFRES</div>
+            <div class="tab">AGENDA</div>
+            <div class="tab">CONTACT</div>
+          </div>
           <h1>Pages#home</h1>
           <h2>Simple Sidebar</h2>
           <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
@@ -54,5 +58,6 @@
   $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
+    $(".tab:first-child").toggleClass("active");
   });
 </script>
