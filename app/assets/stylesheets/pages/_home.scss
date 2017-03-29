@@ -7,6 +7,7 @@
 
 #wrapper {
     padding-left: 0;
+    height: 100%;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -18,18 +19,26 @@
 }
 
 #sidebar-wrapper {
-    z-index: 1000;
+    // z-index: 1000;
     position: fixed;
     left: 250px;
     width: 0;
     height: 100%;
-    margin-left: -50px;
+    margin-left: -100px;
     overflow-y: auto;
     background: #e8e8e8;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    p {
+      font-size: 12px;
+      padding: 0 10px;
+      line-height: 1.1;
+    }
+    span {
+        color: $orange;
+    }
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -40,6 +49,43 @@
     width: 100%;
     position: absolute;
     padding: 15px;
+    .col-sm-12 {
+      height: 97vh;
+      margin: 0 -10px;
+    }
+}
+
+.tabs {
+  z-index: 100;
+}
+
+.tab {
+    position: absolute;
+    height: 20px;
+    width: 75px;
+    font-size: 14px;
+    background-color: $orange;
+    border-radius: 0 0 5px 0;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    text-align: center;
+    color: white;
+    &.active {
+      height: 40px;
+      padding-top: 20px;
+    }
+    &:first-child {
+      top: 170px;
+      left: 7px;
+    }
+    &:nth-child(2) {
+      top: 247px;
+      left: 7px;
+    }
+    &:nth-child(3) {
+      top: 324px;
+      left: 7px;
+    }
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -52,7 +98,7 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 235px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -108,7 +154,7 @@
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 260px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -124,5 +170,34 @@
         position: relative;
         margin-right: 0;
         width: 100%;
+    }
+
+    .tabs {
+        z-index: 100;
+    }
+
+    .tab {
+        position: absolute;
+        height: 20px;
+        width: 75px;
+        font-size: 14px;
+        background-color: $orange;
+        border-radius: 0 0 5px 0;
+        transform: rotate(-90deg);
+        text-align: center;
+        color: white;
+        &:first-child {
+          position: absolute;
+          top: 170px;
+          left: 7px;
+        }
+        &:nth-child(2) {
+          top: 247px;
+          left: 7px;
+        }
+        &:nth-child(3) {
+          top: 324px;
+          left: 7px;
+        }
     }
 }
