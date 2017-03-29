@@ -150,7 +150,8 @@
     #wrapper.toggled {
         padding-left: 0;
         width: 100%;
-        overflow: auto;
+        // overflow: auto;
+        z-index: 500;
     }
 
     #sidebar-wrapper {
@@ -173,7 +174,7 @@
     }
 
     .tabs {
-        z-index: 100;
+        z-index: 600;
     }
 
     .tab {
