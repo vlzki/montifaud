@@ -46,8 +46,8 @@
 }
 
 #page-content-wrapper {
-    width: 100%;
     position: absolute;
+    width: 100%;
     padding: 15px;
     .col-sm-12 {
       height: 97vh;
@@ -56,7 +56,7 @@
 }
 
 .tabs {
-  z-index: 100;
+    z-index: 100;
 }
 
 .tab {
@@ -74,18 +74,20 @@
       height: 40px;
       padding-top: 20px;
     }
-    &:first-child {
-      top: 170px;
-      left: 7px;
-    }
-    &:nth-child(2) {
-      top: 247px;
-      left: 7px;
-    }
-    &:nth-child(3) {
-      top: 324px;
-      left: 7px;
-    }
+}
+.tab1 {
+    top: 170px;
+    left: 7px;
+}
+
+.tab2 {
+    top: 247px;
+    left: 7px;
+}
+
+.tab3 {
+    top: 324px;
+    left: 7px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -150,7 +152,7 @@
     #wrapper.toggled {
         padding-left: 0;
         width: 100%;
-        // overflow: auto;
+        overflow: auto;
         z-index: 500;
     }
 
@@ -187,18 +189,20 @@
         transform: rotate(-90deg);
         text-align: center;
         color: white;
-        &:first-child {
-          position: absolute;
-          top: 170px;
-          left: 7px;
-        }
-        &:nth-child(2) {
-          top: 247px;
-          left: 7px;
-        }
-        &:nth-child(3) {
-          top: 324px;
-          left: 7px;
-        }
+    }
+
+    .tab1 {
+        top: 170px;
+        left: 7px;
+    }
+
+   .tab2 {
+        top: 247px;
+        left: 7px;
+    }
+
+    .tab3 {
+        top: 324px;
+        left: 7px;
     }
 }

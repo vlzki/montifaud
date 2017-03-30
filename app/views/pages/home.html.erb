@@ -39,13 +39,16 @@
           <div class="tabs">
 
             <%= link_to '#menu-toggle', html_options = { id: 'menu-toggle'} do %>
-              <div class="tab active  ">
-                OFFRES
-              </div>
+              <div class="tab tab1 active  ">OFFRES</div>
             <% end %>
 
-            <div class="tab">AGENDA</div>
-            <div class="tab">CONTACT</div>
+            <%= link_to 'calendar' do %>
+              <div class="tab tab2">AGENDA</div>
+            <% end %>
+
+            <%= link_to 'contact' do %>
+              <div class="tab tab3">CONTACT</div>
+            <% end %>
           </div>
           <h1>Pages#home</h1>
           <h2>Simple Sidebar</h2>
@@ -64,6 +67,7 @@
   $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
-    $(".tab:first-child").toggleClass("active");
+    $(".tab1").toggleClass("active");
   });
+
 </script>
