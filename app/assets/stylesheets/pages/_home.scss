@@ -6,7 +6,7 @@
 /* Toggle Styles */
 
 #wrapper {
-    padding-left: 0;
+    padding-left: 0px;
     height: 100%;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -15,14 +15,14 @@
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 0px;
 }
 
 #sidebar-wrapper {
     // z-index: 1000;
     position: fixed;
     left: 250px;
-    width: 0;
+    // width: 0;
     height: 100%;
     margin-left: -100px;
     overflow-y: auto;
@@ -77,17 +77,17 @@
 }
 .tab1 {
     top: 170px;
-    left: 7px;
+    left: -5px;
 }
 
 .tab2 {
     top: 247px;
-    left: 7px;
+    left: -5px;
 }
 
 .tab3 {
     top: 324px;
-    left: 7px;
+    left: -5px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -144,13 +144,15 @@
     background: none;
 }
 
+
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
     }
 
     #wrapper.toggled {
-        padding-left: 0;
+        padding-left: 0px;
         width: 100%;
         overflow: auto;
         z-index: 500;
@@ -161,7 +163,7 @@
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        width: 0;
+        width: 0px;
     }
 
     #page-content-wrapper {

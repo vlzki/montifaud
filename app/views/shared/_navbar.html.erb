@@ -1,6 +1,10 @@
 <div class="navbar">
 
-  <div class="logo"><%= image_tag 'montifaud-logo-menu.svg', alt: 'logo de montifaud' %></div>
+  <%= link_to root_path do %>
+    <div class="logo">
+      <%= image_tag "montifaud-logo-menu.svg", alt: "logo de montifaud" %>
+    </div>
+  <% end %>
 
   <ul class="menu">
     <li class="menu__item">
