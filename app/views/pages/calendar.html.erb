@@ -8,18 +8,18 @@
           <div class="tabs">
 
             <%= link_to '#menu-toggle', html_options = { id: 'menu-toggle'} do %>
-              <div class="tab tab1 active">OFFRES</div>
+              <div class="tab tab1">OFFRES</div>
             <% end %>
 
             <%= link_to 'calendar' do %>
-              <div class="tab tab2">AGENDA</div>
+              <div class="tab tab2 active">AGENDA</div>
             <% end %>
 
             <%= link_to 'contact' do %>
               <div class="tab tab3">CONTACT</div>
             <% end %>
           </div>
-          <h1>Pages#home</h1>
+          <h1>Pages#Calendar</h1>
           <h2>Simple Sidebar</h2>
           <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
           <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
@@ -33,10 +33,11 @@
 <!-- /#wrapper -->
 <!-- Menu Toggle Script -->
 <script>
+  $("#wrapper").toggleClass("toggled");
   $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
-    $(".tab1").toggleClass('active');
+    $(".tab1").toggleClass("active");
   });
 
 </script>
