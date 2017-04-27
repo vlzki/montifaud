@@ -1,5 +1,17 @@
 body {
   position: relative;
   left: 150px;
-  width: 88%;
+  width: 88.6%;
+}
+
+.episode{
+  position: absolute;
+  background-color: $orange;
+  font-size: 14px;
+  height: 22px;
+  width: 130px;
+  color: white;
+  border-radius: 15px 0 0 15px;
+  padding-left: 20px;
+
 }
