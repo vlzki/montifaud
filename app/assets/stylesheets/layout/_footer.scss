@@ -1,9 +1,10 @@
 // Your footer style
 .footer {
+  position: absolute;
   display: block;
-  margin-top: 130%;
-  // margin-bottom: 10px;
+  width: 150px;
   padding: 0;
+  bottom: 0;
   list-style-type: none;
   text-align: center;
   border-top: 1px solid white;
@@ -20,7 +21,7 @@
 
     &:hover {
       a {
-        color: #72D271;
+        color: $green-dark;
         text-decoration: none;
       }
     }
@@ -32,6 +33,9 @@
       padding: 0px 20px;
       font-size: 20px;
     }
+    i {
+      font-size: 25px;
+    }
 
     a {
       color: #C2C2C2;
@@ -40,7 +44,7 @@
 
     &:hover {
       a {
-        color: #72D271;
+        color: $green-dark;
         text-decoration: none;
       }
     }
