@@ -1,1 +1,26 @@
-<h1>page#patrimoine</h1>
+<% provide(:page_title, "Patrimoine") %>
+<%= render 'shared/offres' %>
+
+
+<!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <%= render 'shared/tabs' %>
+          <h1>page#Patrimoine</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+    $(".tab1").toggleClass('active');
+  });
+</script>
