@@ -1,6 +1,27 @@
 <% provide(:page_title, "Environnement") %>
 <%= render 'shared/offres' %>
 
-<h1>page#environnement</h1>
 
-<%= render 'shared/tabs' %>
+<!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <%= render 'shared/tabs' %>
+          <h1>page#environnement</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+    $(".tab1").toggleClass('active');
+  });
+
+</script>
