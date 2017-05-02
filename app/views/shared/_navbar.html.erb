@@ -6,28 +6,119 @@
     </div>
   <% end %>
 
-  <ul class="menu">
+
+
+  <!-- dropdown 1 -->
+  <div class="dropdown">
+    <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <ul class="menu">
+        <li class="menu__item">
+          Lieu
+          <div class="menu__caption">
+            <%= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="dropdown-menu" id="menu" aria-labelledby="dLabel">
+      <h4>
+        <li><%= link_to 'Environnment', environnement_path %></li>
+      </h4>
+      <h4>
+        <li><%= link_to 'Jardin', jardin_path %></li>
+      </h4>
+      <h4>
+        <li><%= link_to 'Patrimoine', patrimoine_path %></li>
+      </h4>
+    </ul>
+  </div>
+  <!-- dropdown 1 -->
+
+<!-- dropdown 2 -->
+<div class="dropdown">
+  <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <ul class="menu">
+      <li class="menu__item">
+        Corps
+        <div class="menu__caption">
+          <%= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="dropdown-menu" id="menu" aria-labelledby="dLabel">
+    <h4>
+      <li><%= link_to 'Repos', repos_path %>
+        <ul>
+          <h5>
+            <li><%= link_to 'Gîte', gite_path %></li>
+          </h5>
+          <h5>
+            <li><%= link_to "Chambre d'hôte", chambre_path %></li>
+          </h5>
+        </ul>
+      </li>
+    </h4>
+    <h4>
+      <li><%= link_to 'Gastronomie', gastronomie_path %></li>
+    </h4>
+    <h4>
+      <li><%= link_to 'Santé', sante_path %></li>
+    </h4>
+  </ul>
+</div>
+<!-- dropdown 2 -->
+<!-- dropdown 3 -->
+<div class="dropdown">
+  <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <ul class="menu">
+      <li class="menu__item">
+        Esprit
+        <div class="menu__caption">
+          <%= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="dropdown-menu" id="menu" aria-labelledby="dLabel">
+    <h4>
+      <li><%= link_to 'Valeurs', valeurs_path %></li>
+    </h4>
+    <h4>
+      <li><%= link_to 'Art', gastronomie_path %></li>
+    </h4>
+    <h4>
+      <li><%= link_to 'Sens', sante_path %></li>
+    </h4>
+  </ul>
+</div>
+<!-- dropdown 3 -->
+
+  <!-- <ul class="menu">
     <li class="menu__item">
       <a href="#">Lieu</a>
       <div class="menu__caption">
-        <%= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
+        <%#= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
       </div>
-    </li>
+    </li> -->
 
-    <li class="menu__item">
+    <!-- <li class="menu__item">
       <a href="#">Corps</a>
       <div class="menu__caption">
-        <%= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
+        <%#= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
       </div>
-    </li>
-
+    </li> -->
+<!--
     <li class="menu__item">
       <a href="#">Esprit</a>
       <div class="menu__caption">
-        <%= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
+        <%#= image_tag "montifaud-feuille-menu.svg", alt: "feuille de montifaud" %>
       </div>
     </li>
-  </ul>
+  </ul> -->
 
   <ul class="footer">
     <li class="footer_item">
