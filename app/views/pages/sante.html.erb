@@ -1,0 +1,26 @@
+<% provide(:page_title, "Santé") %>
+<%= render 'shared/offres' %>
+
+
+<!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <%= render 'shared/tabs' %>
+          <h1>page#Santé</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+    $(".tab1").toggleClass('active');
+  });
+</script>
