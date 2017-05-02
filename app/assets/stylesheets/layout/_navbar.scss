@@ -1,12 +1,16 @@
 .navbar {
-  z-index: 1000;
+  // z-index: 1000;
   position: fixed;
-  top: 0;
+  top: -20px;
   left: 0;
-  background: #292424;
+  // background: #292424;
   height: 100%;
   width: 150px;
   padding-top: 18px;
+  .back{
+    height: 100vh;
+  }
+
 
 
   .menu {
@@ -18,12 +22,8 @@
 
     &__item {
       position: relative;
-      // margin-top: 15px;
-      // margin-bottom: 5px;
       font-size: 20px;
       line-height: 2;
-      // padding-bottom: 20px;
-      // border-bottom: 1px solid white;
       color: #C2C2C2;
       cursor: pointer;
       &.first-child{
