@@ -36,36 +36,68 @@
 
 
 @media(min-width:768px) {
+  #wrapper.toggled{
+    .tabs {
+        z-index: 600;
+    }
 
+    .tab {
+        position: absolute;
+        height: 20px;
+        width: 75px;
+        font-size: 14px;
+        background-color: $orange;
+        border-radius: 0 0 5px 0;
+        transform: rotate(-90deg);
+        text-align: center;
+        color: white;
+
+    }
+
+    .tab1 {
+        top: 170px;
+        left: 10px;
+    }
+
+    .tab2 {
+        top: 247px;
+        left: 10px;
+    }
+
+    .tab3 {
+        top: 324px;
+        left: 10px;
+    }
+  }
   .tabs {
-      z-index: 600;
-  }
+        z-index: 600;
+    }
 
-  .tab {
-      position: absolute;
-      height: 20px;
-      width: 75px;
-      font-size: 14px;
-      background-color: $orange;
-      border-radius: 0 0 5px 0;
-      transform: rotate(-90deg);
-      text-align: center;
-      color: white;
+    .tab {
+        position: absolute;
+        height: 20px;
+        width: 75px;
+        font-size: 14px;
+        background-color: $orange;
+        border-radius: 0 0 5px 0;
+        transform: rotate(-90deg);
+        text-align: center;
+        color: white;
 
-  }
+    }
 
-  .tab1 {
-      top: 170px;
-      left: 18px;
-  }
+    .tab1 {
+        top: 170px;
+        left: 18px;
+    }
 
-  .tab2 {
-      top: 247px;
-      left: 18px;
-  }
+    .tab2 {
+        top: 247px;
+        left: 18px;
+    }
 
-  .tab3 {
-      top: 324px;
-      left: 18px;
-  }
+    .tab3 {
+        top: 324px;
+        left: 18px;
+    }
 }
