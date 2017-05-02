@@ -51,6 +51,10 @@
         transform: rotate(-90deg);
         text-align: center;
         color: white;
+        &.active {
+          height: 40px;
+          padding-top: 20px;
+        }
 
     }
 
