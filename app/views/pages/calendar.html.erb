@@ -6,7 +6,19 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
-          <%= render 'shared/tabs'%>
+          <div class="tabs">
+            <%= link_to '#menu-toggle', html_options = { id: 'menu-toggle'} do %>
+            <div class="tab tab1 active">OFFRES</div>
+            <% end %>
+
+            <%= link_to 'calendar' do %>
+            <div class="tab tab2 active">AGENDA</div>
+            <% end %>
+
+            <%= link_to 'contact' do %>
+            <div class="tab tab3">CONTACT</div>
+            <% end %>
+          </div>
           <h1>Pages#Calendar</h1>
 
         </div>
@@ -20,9 +32,10 @@
 <!-- Menu Toggle Script -->
 <script>
   $("#wrapper").toggleClass("toggled");
+  $(".tab1").toggleClass('active');
   $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
-    $(".tab1").toggleClass("active");
+    $(".tab1").toggleClass('active');
   });
 </script>
