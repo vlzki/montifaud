@@ -1,6 +1,7 @@
 <% provide(:page_title, "Accueil") %>
 <%= render 'shared/offres' %>
 
+
   <!-- Page Content -->
   <div id="page-content-wrapper">
     <div class="container-fluid">
@@ -9,7 +10,12 @@
 
           <%= render 'shared/tabs' %>
 
-          <h1>Pages#home</h1>
+          <div class="banner">
+            <div class="banner-content">
+              <img src="assets/montifaud-logo-accueil.svg" alt="Logo">
+            </div>
+          </div>
+
           <div class="intro" id="intro_toggle">
             <div id="button-toggle">
               <div id="inner-button">
@@ -44,6 +50,7 @@
 
 
 <!-- /#wrapper -->
+
 <!-- Menu Toggle Script -->
 <script>
   $("#menu-toggle").click(function(e) {
