@@ -1,72 +1,9 @@
 .banner {
-  color: white;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-image: url('ACCUEIL-MONTIFAUD.png');
-  background-size: cover !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // background-size: cover !important;
+  height: 150%;
+  width: auto;
+  margin-top: -20px;
 
-}
-
-.banner-content {
-  img {
-    width: 450px;
-    position: relative;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-}
-
-.banner h1 {
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-}
-
-.banner p {
-  font-size: 20px;
-  font-weight: lighter;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 20px;
-}
-
-/* Image Center Crop Pattern CSS */
-.crop {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 450px;
-}
-
-.crop img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
-
-.crop.crop-top img { margin: -10% auto 0; }
-.crop-bottom img { margin: 0 auto -10%; }
-.crop.crop-vertically img { margin: -9% auto; }
-.crop.crop-right img { width: 140%; }
-.crop.crop-left img { width: 140%; margin: 0 0 0 -40%; }
-.crop.crop-horizontally img { width: 180%; margin: 0 -20%; }
-.crop.crop-square img {
-  width: 259.5%; /* calculate based on your original image... img-width*100/img-height */
-  margin: 0 0 0 -79.75%; /* the above value minus 50 */
-}
-
-@media only screen and (max-width: 599px) {
-  .crop img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -300px;
-  }
 }
