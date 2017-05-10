@@ -1,55 +1,57 @@
 <% provide(:page_title, "Accueil") %>
 <%= render 'shared/offres' %>
 
+<!-- /#wrapper -->
+<div class="wrapper banner">
 
   <!-- Page Content -->
-  <div class="wrapper banner">
-    <div id="page-content-wrapper">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
 
-            <%= render 'shared/tabs' %>
+          <%= render 'shared/tabs' %>
 
-
-            <img class="logo-home" src="assets/montifaud-logo-accueil.svg" alt="Logo">
-
-
-
-            <div class="intro" id="intro_toggle">
-              <div id="button-toggle">
-                <div id="inner-button">
-                  <h4>Laissez-vous porter !</h4>
-                </div>
+          <div class="logo-home" id="intro_toggle-logo">
+            <div id="button-toggle">
+              <div id="inner-button-logo">
+                <img src="assets/montifaud-logo-accueil.svg" alt="Logo">
               </div>
-              <p id="base-intro">Il est un endroit en Charente Maritime où le bien-être est le maître-mot: MONTIFAUD. Ce lieu est porteur des valeurs du "Bien-Etre", du bien vivre, de se sentir et de manger bien; le bien-être comme source de réalisation de soi dans un corps sain. Venir à Montifaud, c'est vivre dans un esprit de partage et de collaboration et prendre conscience de nos besoins vitaux.</p>
-              <div class="col-xs-12 col-sm-4">
-                <p><span>LIEU</span></p>
-                <p>Montifaud, lieu de vie en Poitou Charente où l'on vous propose des activités diverses dans le partage et la convivialité. Un hébergement sur mesure pour prolonger l'expérience du bien-être et profiter d'un moment de détente. Philippe vous convie dans son jardin pour observer la nature, source de plaisir et de pédagogie pour l'homme. Jeanne Marie vous aidera à élaborer un circuit des plus beaux sites de Charente Maritime et fera de votre séjour un souvenir unique.</p>
-              </div>
-              <div class="col-xs-12 col-sm-4">
-                <p><span>CORPS</span></p>
-                <p>Vous trouverez tous les ingrédients à la détente et pour prendre soin de soi: un acueil personnalisé, un logement en plein nature où vous vous régalerez, à la table paysanne, de produits de saison frais et d'une gastronomie familiale. Etre bien, c'est aussi s'écouter pour échanger sur sa santé et le développement personnel pour pratiquer dans le cadre de stage.</p>
-              </div>
-              <div class="col-xs-12 col-sm-4">
-                <p><span>ESPRIT</span></p>
-                <p>Le domaine de Montifaud s'articule autour de valeurs fortes: un "accueil paysan" accessible pour tous. Du partage des cultures au contact des woofers en passant par des expositions culturelles, des conférences ou des concerts à thème. Tout est prétexte à l'échange et au partage. Montifaud est nourri d'une philosophie d'accueil portée au quotidien par Jeanne Marie et Philippe.</p>
-              </div>
-              <%= link_to 'environnement' do %>
-                <div class="episode">
-                  Episode 1
-                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                </div>
-              <% end %>
             </div>
+          </div>
+
+          <div class="intro" id="intro_toggle">
+            <div id="button-toggle">
+              <div id="inner-button">
+                <h4>Laissez-vous porter !</h4>
+              </div>
+            </div>
+            <p id="base-intro">Il est un endroit en Charente Maritime où le bien-être est le maître-mot: MONTIFAUD. Ce lieu est porteur des valeurs du "Bien-Etre", du bien vivre, de se sentir et de manger bien; le bien-être comme source de réalisation de soi dans un corps sain. Venir à Montifaud, c'est vivre dans un esprit de partage et de collaboration et prendre conscience de nos besoins vitaux.</p>
+            <div class="col-xs-12 col-sm-4">
+              <p><span>LIEU</span></p>
+              <p>Montifaud, lieu de vie en Poitou Charente où l'on vous propose des activités diverses dans le partage et la convivialité. Un hébergement sur mesure pour prolonger l'expérience du bien-être et profiter d'un moment de détente. Philippe vous convie dans son jardin pour observer la nature, source de plaisir et de pédagogie pour l'homme. Jeanne Marie vous aidera à élaborer un circuit des plus beaux sites de Charente Maritime et fera de votre séjour un souvenir unique.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <p><span>CORPS</span></p>
+              <p>Vous trouverez tous les ingrédients à la détente et pour prendre soin de soi: un acueil personnalisé, un logement en plein nature où vous vous régalerez, à la table paysanne, de produits de saison frais et d'une gastronomie familiale. Etre bien, c'est aussi s'écouter pour échanger sur sa santé et le développement personnel pour pratiquer dans le cadre de stage.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <p><span>ESPRIT</span></p>
+              <p>Le domaine de Montifaud s'articule autour de valeurs fortes: un "accueil paysan" accessible pour tous. Du partage des cultures au contact des woofers en passant par des expositions culturelles, des conférences ou des concerts à thème. Tout est prétexte à l'échange et au partage. Montifaud est nourri d'une philosophie d'accueil portée au quotidien par Jeanne Marie et Philippe.</p>
+            </div>
+            <%= link_to 'environnement' do %>
+              <div class="episode">
+                Episode 1
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- /#page-content-wrapper -->
-
-
+</div>
 <!-- /#wrapper -->
 
 <!-- Menu Toggle Script -->
@@ -61,8 +63,10 @@
   });
   $( "#inner-button" ).click(function() {
     if($("#intro_toggle").hasClass("heighttoggled")){
+      $("#intro_toggle-logo").animate({"margin-top":"240px"}).addClass("heighttoggled");
       $("#intro_toggle").animate({"height":"300px"}).removeClass("heighttoggled");
     }else{
+      $("#intro_toggle-logo").animate({"margin-top":"450px"}).removeClass("heighttoggled");
       $("#intro_toggle").animate({"height":"95px"}).addClass("heighttoggled");
     };
   });
