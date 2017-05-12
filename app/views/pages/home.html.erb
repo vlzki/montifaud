@@ -1,6 +1,9 @@
 <% provide(:page_title, "Accueil") %>
 <%= render 'shared/offres' %>
 
+<!-- /#wrapper -->
+<div class="wrapper banner">
+
   <!-- Page Content -->
   <div id="page-content-wrapper">
     <div class="container-fluid">
@@ -9,7 +12,14 @@
 
           <%= render 'shared/tabs' %>
 
-          <h1>Pages#home</h1>
+          <div class="logo-home" id="intro_toggle-logo">
+            <div id="button-toggle">
+              <div id="inner-button-logo">
+                <img src="assets/montifaud-logo-accueil.svg" alt="Logo">
+              </div>
+            </div>
+          </div>
+
           <div class="intro" id="intro_toggle">
             <div id="button-toggle">
               <div id="inner-button">
@@ -41,9 +51,9 @@
     </div>
   </div>
   <!-- /#page-content-wrapper -->
-
-
+</div>
 <!-- /#wrapper -->
+
 <!-- Menu Toggle Script -->
 <script>
   $("#menu-toggle").click(function(e) {
@@ -53,8 +63,10 @@
   });
   $( "#inner-button" ).click(function() {
     if($("#intro_toggle").hasClass("heighttoggled")){
+      $("#intro_toggle-logo").animate({"margin-top":"240px"}).addClass("heighttoggled");
       $("#intro_toggle").animate({"height":"300px"}).removeClass("heighttoggled");
     }else{
+      $("#intro_toggle-logo").animate({"margin-top":"450px"}).removeClass("heighttoggled");
       $("#intro_toggle").animate({"height":"95px"}).addClass("heighttoggled");
     };
   });
